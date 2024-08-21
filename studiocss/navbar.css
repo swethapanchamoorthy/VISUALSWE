@@ -1,0 +1,212 @@
+*
+{
+        margin: 0;
+        cursor: pointer;
+        box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+
+}
+/* .menubar img{
+    position: relative;
+    height:80px;
+    width:12%;
+   right:100px;
+    
+    
+}
+.menubar .curly{
+    position: absolute;
+height:50px;
+    width:5%;
+left:100px;
+top:20px;
+color: black;
+}
+
+.menubar
+{
+    background-color:white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    box-shadow:1px 0px 8px  black;
+    
+}
+
+
+.logo
+{
+    position: relative;
+    color: black;
+    font-size: 30px;
+    font-family: 'Edwardian Script ITC';
+    right:160px;
+    bottom: 14px;
+   
+  
+
+}
+.logo:first-letter{
+    font-size: 50px;
+    
+}
+.logo span{
+    position: relative;
+    color:black;
+    font-size: 20px;
+    top: 20px;
+    font-family:Times New Roman;
+
+right:45px;
+
+} */
+
+.menubar ul{
+    list-style: none;
+    display: flex;
+}
+.menubar ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+.menubar ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 10px;
+    transition: all 0.3s;
+
+}
+.menubar ul li a:hover{
+    color:rgb(255, 0, 149);;
+    
+
+
+}
+
+
+.dropdown
+{
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+.menubar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top:100%;
+  
+    background:transparent;
+    box-shadow:1px 0px 8px  black;
+}
+.menubar ul li:hover .dropdown ul{
+    display: block;
+    margin:10px;
+
+}
+
+.menubar ul li:hover .dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+.fa {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+    
+}
+.dropdown2{
+    display: none;
+}
+.dropdown ul li:hover .dropdown2{
+    display: block;
+    position: absolute;
+    top:2px;
+    left:150px;
+    background:transparent;
+    box-shadow:1px 0px 8px  black;
+
+}
+.dropdown li:hover .fa-sort-desc{
+    transform: rotate(270deg);
+}
+
+
+
+/* .buynow button 
+    {
+        position: absolute;
+        color:rgb(252, 252, 252);
+        background-color: violet;
+       
+        left:620px;
+       bottom: 150px;
+       font-size: 20px;
+       font-family:'Times New Roman';
+       
+        border:1px solid violet;
+        box-shadow: 1px 2px 3px blueviolet;
+padding:10px 20px;
+border-radius:25px;
+    }
+     */
+
+
+/* .menubar .fa-cart-shopping:hover{
+    color: rgb(255, 0, 149);
+font-size: 20px;
+}
+.menubar .fa-shopify:hover{
+    color: rgb(255, 0, 149);
+font-size: 20px;
+}
+.menubar .fa-star:hover{
+    color: rgb(255, 0, 149);
+font-size: 20px;
+}
+
+.image .imgs{
+    position: relative;
+    top:20px;
+    background-color: #FDFDFD;
+    height: 700px;
+    width: 100%;
+}
+.image .blur
+ {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    /* background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    /* color: #f1f1f1;
+    width: 100%;
+    padding: 250px;
+    height:100px;
+    
+  }
+ */
+
+
+
+
+
+
+
+
+
+
+/* .imgs
+{
+    position: relative;
+ 
+bottom: 200px;
+    left: 20px;
+    width: 500px; */
+   
+   
+

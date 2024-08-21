@@ -1,0 +1,264 @@
+
+*
+{
+    cursor: pointer;
+  
+font-family: sans-serif;
+
+}
+
+    .banner{
+        position: relative;
+        width: 100%;
+        height:100%;
+       
+
+        
+      
+    }
+     .slider{
+    /* width: 100%;
+    height: 100%; */
+    position: absolute;
+    top: 0;
+    z-index: -100;
+}
+#slideimg
+{
+    width: 1400px;
+    height: 700px;
+
+    
+}
+ 
+
+.logo img{
+    position: relative;
+    width: 13%;
+    height: 180px;
+    cursor: pointer;
+   top:1px;
+    left:20px;
+}
+
+
+
+
+
+
+
+
+
+.menubar
+{
+    margin-top: -160px;
+    margin-left: 350px;
+}
+
+
+
+.menubar ul{
+    list-style: none;
+    display: flex;
+}
+.menubar ul li{
+    padding: 10px 30px;
+    position: relative;
+   
+}
+.menubar .swe li{
+    margin-left: 20px;
+}
+.menubar ul li a{
+    color: rgb(255, 249, 249);
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.3s;
+    font-weight: bold;
+
+}
+.menubar ul li a:hover{
+    color:rgb(255, 0, 149);;
+}
+.dropdown
+{
+    display: none;
+    position: relative;
+    z-index: 1;
+    width:200px;
+    
+}
+.swe li a{
+    margin-left: -20px;
+}
+.menubar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: -30px;
+    top:100%;
+  
+    background:transparent;
+    box-shadow:1px 0px 8px  rgb(255, 253, 253);
+}
+.menubar ul li:hover .dropdown ul{
+    display: block;
+    margin:10px;
+
+}
+
+.menubar ul li:hover .dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+
+
+
+
+.menu-icons{
+ position: relative;
+ text-align: right;
+
+
+}
+.menu-icons i{
+    position: relative;
+   width: 3%;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    bottom: 50px;
+    right:80px;
+    
+}
+
+.coffee{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    left: 100px   ;
+    top: 150px;
+    display: grid;
+    justify-items: center;
+}
+
+
+
+
+
+
+.coffee h1{
+
+    color: rgb(240, 111, 187);
+    font-size: 55px;
+
+
+
+}
+.coffee span{
+    color:  rgb(240, 111, 187);
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: -20px;
+  
+    
+}
+.coffee h3{
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+.category{
+    
+    width: 100%;
+    display: flex;
+   /* color: white; */
+   justify-content: center; 
+   /* margin-bottom: 100px; */
+}
+.category .list-items{
+    width: 80%;
+    position: relative;
+    margin-top: 250px;
+    margin-left: -250px;
+}
+.category .list-items h3
+{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-bottom: 70px;
+  margin-left: 30px;
+  color: rgb(242, 247, 0);
+
+}
+.category .list-items .card-list
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.category .card-list .card
+{
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    outline: 2px solid #faad96;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+
+}
+.category .card-list .card img
+{
+    width: 100px;
+    height: auto;
+    bottom: 160px;
+    left: 55px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    filter: drop-shadow( 5px 5px 20px #faad96);
+    /* box-shadow: 0 20px 20px #faad96; */
+    border-radius: 50%;
+}
+.category .card-list .card .food-title
+{
+padding: 40px 0 10px;
+
+
+}
+.category .card-list .card .food-title h1{
+    text-align: center;
+    font-weight:  bold;
+    font-size: 16px;
+    font-family: sans-serif;
+    
+}
+.category .card .desc-food p
+{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+.category .card .price
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.category .card .price span .plus-icon
+{
+    color: #ff511c;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+

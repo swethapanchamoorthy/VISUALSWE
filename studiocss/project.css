@@ -1,0 +1,135 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    /* background: url("https://www.hummingbirdbakery.com/media/cache/home_top_slider/images/cms/mirabeau-banner-6696404c9488b733636291.jpg"); */
+    background: url("https://www.baltana.com/files/wallpapers-5/Cake-Best-Wallpaper-17225.jpg");
+    /* background-position: center; */
+    background-size: cover;
+    height: 400px;
+}
+header{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+header .navbar
+{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.navbar .logo
+{
+    font-size: 2.1rem;
+    font-weight: 600;
+
+}
+.navbar .logo span{
+    color: #c06b3e;
+}
+.navbar .menu-links
+{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.navbar a
+{
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.navbar a:hover
+{
+    color: #c06b3e;
+}
+.hero-section 
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.hero-section  .content
+{
+    color: white;
+    max-width:1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-section  .content h1{
+    font-size: 3rem;
+    max-width: 600px;
+
+}
+.hero-section  .content p
+{
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+.hero-section  .content button{
+    background: white;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px ;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.hero-section  .content button:hover
+{
+    background: #c06b3e;
+    color: white;
+}
+#menu-btn
+{
+    color: white;
+    cursor: pointer;
+}
+#close-btn
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    
+}
+@media screen and (max-width:900px){
+    #close-btn, #menu-btn
+    {
+        display: block;
+    }
+    .navbar .menu-links
+    {
+        position: fixed;
+        left: -260px;
+        top: 0;
+        width: 260px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        padding: 70px 40px 0;
+    }
+    .navbar a 
+    {
+        color: black;
+    }
+    
+}

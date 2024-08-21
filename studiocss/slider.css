@@ -1,0 +1,197 @@
+*{
+margin:0;
+padding: 0;
+font-family: sans-serif;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+#slideimg
+{
+    width: 100%;
+    height: 120%;
+    animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom
+{
+0%{
+    transform: scale(1.3);
+}
+15%{
+    transform: scale(1);
+}
+85%{
+    transform: scale(1);
+}
+0%{
+    transform: scale(1.3);
+}
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5));
+    position: absolute;
+    top:0;
+}
+
+
+.menubar
+{
+    margin-top: -141px;
+    margin-left: 100px;
+}
+
+
+
+.menubar ul{
+    list-style: none;
+    display: flex;
+}
+.menubar ul li{
+    padding: 10px 30px;
+    position: relative;
+   
+}
+.menubar .swe li{
+    margin-left: 20px;
+}
+.menubar ul li a{
+    color: rgb(255, 249, 249);
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s;
+    font-weight: bold;
+
+}
+.menubar ul li a:hover{
+    color:rgb(255, 0, 149);;
+}
+.dropdown
+{
+    display: none;
+    position: relative;
+    z-index: 1;
+    
+}
+.menubar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: -30px;
+    top:100%;
+  
+    background:transparent;
+    box-shadow:1px 0px 8px  rgb(255, 253, 253);
+}
+.menubar ul li:hover .dropdown ul{
+    display: block;
+    margin:10px;
+
+}
+
+.menubar ul li:hover .dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+.fa {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+    
+}
+
+
+
+
+
+
+.navbar{
+    width: 85%;
+    display: flex;
+  align-items: center;
+    margin: 35px auto;
+    
+}
+.logo{
+    flex-basis: 15%;
+}
+.logo img{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    cursor: pointer;
+    bottom: 40px;
+    right: 70px;
+}
+.menu-icons{
+    flex: 1;
+    align-items: center;
+    text-align: right;
+}
+.menu-icons i{
+    position: relative;
+    width: 10%;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    bottom: 70px;
+    
+}
+.content {
+ position: relative;
+    width: 60%;
+    bottom: 70px;
+
+    margin: 160px auto 0;
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 60px;
+}
+.content h3{
+    width: 80%;
+    margin: 20PX auto 100PX;
+    font-weight: 400;
+    line-height: 25PX;
+}
+button{
+    position: relative;
+    bottom: 50px;
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #D55312;
+    background:#D55312;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button:hover{
+    background:transparent ;
+    border: 2px solid #fff;
+   
+
+}
+.btn-2{
+    border: 2px solid #fff;
+    background:transparent ;
+}
+.btn-2:hover{
+    border: 2px solid #D55312;
+    background:#D55312;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <script src="https://kit.fontawesome.com/dbb151e45c.js" crossorigin="anonymous"></script>
+
+     <title>slider</title>
+    <link rel="stylesheet" type="text/css" href="studiocss/slider.css">
+</head>
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="sweswe\ano.jpeg" id="slideimg">
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="sweswe\fno.png">
+                </div>
+                
+                
+                
+                <div class="menubar">
+                    
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Cakes<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                        <div class="dropdown">
+                            <ul class="swe">
+                                <li><a href="#">veletine</a></li>
+                        <li><a href="#">Birthday</a></li>
+                        <li><a href="#">Marriage</a></li>
+                        <li><a href="#">Functions</i></a>
+                        
+                        </li>
+                            </ul>
+                          
+                        </div>
+                        
+                        </li>
+                        <li><a href="#">Varities</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+
+
+ <div class="menu-icons">
+                   <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-brands fa-shopify"></i>
+        
+                </div>
+            </div>
+            <div class="content">
+           <h1>LET'S MAKE A CAKES</h1>
+          <h3>You're Day Start With A Happy Cake.</h3>
+<div>
+
+    <button type="button">Sign In</button>
+    <button type="button" class="btn-2">Sign Up</button>
+</div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <script>    
+var slideimg = document.getElementById("slideimg")
+var images = new Array(
+    "sweswe/banner.jpg", 
+    "sweswe/ano.jpeg",
+    "sweswe/bno.jpeg",
+    "sweswe/cno.webp",
+ 
+
+      );
+      var len  = images.length;
+      var i = 0;
+    function slider(){
+        if( i > len-1){
+            i = 0;
+        }
+        slideimg.src = images[i]
+        i++;
+        setTimeout('slider()',1000);
+    }
+
+
+
+
+    </script>
+</body>
+</html>
